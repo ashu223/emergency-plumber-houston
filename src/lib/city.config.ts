@@ -10,10 +10,14 @@ export const siteConfig = {
 
   // 🏢 BUSINESS
   businessName: "Emergency Plumber Houston",
+  brand: "Emergency Plumber Houston",
   domain: "https://emergency-plumber-houston.pages.dev",
 
   // 📞 PHONE
-  phone: "+18663820802",
+  phone: {
+    tel: "+18663820802",
+    display: "(866) 382-0802",
+  },
   displayPhone: "(866) 382-0802",
 
   // 🕒 HOURS
