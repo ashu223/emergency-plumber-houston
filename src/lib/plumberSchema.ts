@@ -7,7 +7,7 @@ export const plumberSchema = () => ({
   name: `${siteConfig.primaryKeyword} – ${siteConfig.brand}`,
 
   url: siteConfig.domain,
-  telephone: siteConfig.phone,
+  telephone: siteConfig.phone.tel,
   priceRange: "$$",
 
   description: `${siteConfig.primaryKeyword}. ${siteConfig.serviceDescription}`,
