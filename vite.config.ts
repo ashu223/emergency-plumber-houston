@@ -37,12 +37,9 @@ export default defineConfig(({ mode }) => ({
           },
         },
         postProcess(renderedRoute: { html: string; route: string }) {
-          // Ensure asset paths are absolute
-          renderedRoute.html = renderedRoute.html.replace(
-            /href="\.\//g,
-            'href="/'
-          ).replace(/src="\.\//g, 'src="/');
-          return renderedRoute;
+          renderedRoute.html = renderedRoute.html
+            .replace(/href="\.\//g, 'href="/')
+            .replace(/src="\.\//g, 'src="/');
         },
       }),
   ].filter(Boolean),
